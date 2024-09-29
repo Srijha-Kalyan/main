@@ -410,31 +410,45 @@
   </section><!-- End Portfolio Section -->
 
   <style>
-	.research-content {
-	  display: flex;
-	  flex-direction: column;
-	}
-	
-	.research-item {
-	  display: flex;
-	  align-items: center;
-	  margin-bottom: 20px;
-	}
-	
-	.research-image {
-	  flex: 1;
-	  max-width: 200px; /* Adjust this based on the image size */
-	}
-	
-	.research-description {
-	  flex: 2;
-	  padding-left: 20px;
-	}
-	
-	.img-fluid {
-	  max-width: 100%;
-	  height: auto;
-	}
+    .portfolio-content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px; /* Adds spacing between each research paper */
+    }
+
+    .portfolio-item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px; /* Adds spacing between image and description */
+    }
+
+    .portfolio-image {
+      flex: 1;
+      max-width: 400px; /* Adjust the size of the image */
+    }
+
+    .portfolio-description {
+      flex: 2;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section-title h2 {
+      margin-bottom: 30px; /* Adds some margin under the title */
+    }
+
+    .portfolio-description h4 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-description p {
+      font-size: 1em;
+    }
   </style>
   <!-- ======= Research Section ======= -->
   <section id="research" class="research">
@@ -451,7 +465,6 @@
 	  <a href="https://link.springer.com/chapter/10.1007/978-981-16-0878-0_40">
         </div>
         <div class="research-description">
-          <h4>DEPRESSION DETECTION USING LARGE LANGUAGE MODELS</h4>
           <p>Detecting depression from interview transcripts using LSTMs and transformers</p>
         </div>
       </div>
@@ -463,7 +476,6 @@
 	  <a href="https://link.springer.com/chapter/10.1007/978-981-15-9019-1_1">
         </div>
         <div class="research-description">
-          <h4>FRAUDLENT DETECTION OF HEALTHCARE INSURANCE USING HYBRID MACHINE LEARNING APPROACH</h4>
           <p>Short description of the second research paper.</p>
         </div>
       </div>
