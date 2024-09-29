@@ -410,46 +410,51 @@
   </section><!-- End Portfolio Section -->
 
   <style>
-    .portfolio-content {
-      display: flex;
-      flex-direction: column;
-      gap: 40px; /* Adds spacing between each research paper */
-    }
-
-    .portfolio-item {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 20px; /* Adds spacing between image and description */
-    }
-
-    .portfolio-image {
-      flex: 1;
-      max-width: 400px; /* Adjust the size of the image */
-    }
-
-    .portfolio-description {
-      flex: 2;
-    }
-
-    .img-fluid {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .section-title h2 {
-      margin-bottom: 30px; /* Adds some margin under the title */
-    }
-
-    .portfolio-description h4 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-    }
-
-    .portfolio-description p {
-      font-size: 1em;
-    }
-  </style>
+	.research-content {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 40px; /* Adds spacing between each research paper */
+	}
+	
+	.research-item {
+	  display: flex;
+	  flex-direction: row;
+	  align-items: flex-start;
+	  gap: 20px; /* Adds spacing between image and description */
+	}
+	
+	.research-image {
+	  flex: 1;
+	}
+	
+	.research-image img {
+	  width: 250px; /* Fixed width */
+	  height: 150px; /* Fixed height */
+	  object-fit: cover; /* Ensures the image fits within the box without distorting the aspect ratio */
+	}
+	
+	.research-description {
+	  flex: 2;
+	}
+	
+	.img-fluid {
+	  max-width: 100%;
+	  height: auto;
+	}
+	
+	.section-title h2 {
+	  margin-bottom: 30px; /* Adds some margin under the title */
+	}
+	
+	.research-description h4 {
+	  font-size: 1.5em;
+	  margin-bottom: 10px;
+	}
+	
+	.research-description p {
+	  font-size: 1em;
+	}
+</style>
   <!-- ======= Research Section ======= -->
   <section id="research" class="research">
     <div class="container">
