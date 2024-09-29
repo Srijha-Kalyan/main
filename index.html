@@ -409,39 +409,65 @@
     </div>
   </section><!-- End Portfolio Section -->
 
+  <style>
+	.research-content {
+	  display: flex;
+	  flex-direction: column;
+	}
+	
+	.research-item {
+	  display: flex;
+	  align-items: center;
+	  margin-bottom: 20px;
+	}
+	
+	.research-image {
+	  flex: 1;
+	  max-width: 200px; /* Adjust this based on the image size */
+	}
+	
+	.research-description {
+	  flex: 2;
+	  padding-left: 20px;
+	}
+	
+	.img-fluid {
+	  max-width: 100%;
+	  height: auto;
+	}
+  </style>
   <!-- ======= Research Section ======= -->
   <section id="research" class="research">
     <div class="container">
-      <div class="section-title">
-        <h2>Research Work</h2>
-      </div>
-      <div class="row">
+    <div class="section-title">
+      <h2>Research Work</h2>
+    </div>
+    
+    <div class="research-content">
       <!-- Research Paper 1 -->
-      <div class="col-lg-4 col-md-6 research-item filter-nlp">
-        <div class="research-wrap">
+      <div class="research-item">
+        <div class="research-image">
           <img src="assets/img/portfolio/research-paper-1.jpg" class="img-fluid" alt="Research Paper 1">
-          <a href="https://github.com/Srijha09/Detecting-Depression-with-a-Flask-Application">
-            <div class="research-info">
-              <h4>DEPRESSION DETECTION</h4>
-              <p>Detecting depression from interview transcripts using LSTMs and transformers</p>
-            </div>
-          </a>
+	  <a href="https://link.springer.com/chapter/10.1007/978-981-16-0878-0_40">
+        </div>
+        <div class="research-description">
+          <h4>DEPRESSION DETECTION USING LARGE LANGUAGE MODELS</h4>
+          <p>Detecting depression from interview transcripts using LSTMs and transformers</p>
         </div>
       </div>
 
       <!-- Research Paper 2 -->
-      <div class="col-lg-4 col-md-6 research-item filter-nlp">
-        <div class="research-wrap">
+      <div class="research-item">
+        <div class="research-image">
           <img src="assets/img/portfolio/research-paper-2.jpg" class="img-fluid" alt="Research Paper 2">
-          <a href="https://link.to/research-paper-2">
-            <div class="research-info">
-              <h4>RESEARCH PAPER TITLE 2</h4>
-              <p>Short description of the second research paper.</p>
-            </div>
-          </a>
+	  <a href="https://link.springer.com/chapter/10.1007/978-981-15-9019-1_1">
+        </div>
+        <div class="research-description">
+          <h4>FRAUDLENT DETECTION OF HEALTHCARE INSURANCE USING HYBRID MACHINE LEARNING APPROACH</h4>
+          <p>Short description of the second research paper.</p>
         </div>
       </div>
-    </div>
+  </div>
   </section><!-- End Research Section -->
 
   <!-- ======= Contact Section ======= -->
