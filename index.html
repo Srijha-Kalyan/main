@@ -425,12 +425,13 @@
 	
 	.research-image {
 	  flex: 1;
+	  max-width: 100%; /* Prevents the image from being too large */
 	}
 	
 	.research-image img {
-	  width: 500px; /* Fixed width */
-	  height: 250px; /* Fixed height */
-	  object-fit: cover; /* Ensures the image fits within the box without distorting the aspect ratio */
+	  width: 400px; /* Set a fixed width for the image */
+	  height: 250px; /* Set a fixed height for the image */
+	  object-fit: cover; /* Ensures the image doesn't stretch */
 	}
 	
 	.research-description {
@@ -453,6 +454,17 @@
 	
 	.research-description p {
 	  font-size: 1em;
+	}
+	
+	@media (max-width: 768px) {
+	  .research-item {
+	    flex-direction: column;
+	  }
+	
+	  .research-image img {
+	    width: 100%;
+	    height: auto;
+	  }
 	}
 </style>
   <!-- ======= Publication Section ======= -->
