@@ -93,9 +93,9 @@
           <br>
           <div class='about-btns' >
 						
-            <a href='https://drive.google.com/file/d/1SF-TT8bvurwHuDilALsE3QMY0TeVjxkb/view?usp=sharing' class='btn-custom btn-color' >
-              Download Resume
-            </a>
+            <b><a href='https://drive.google.com/file/d/1YgFXkpB_cV8xhnntpvFzNocUGrw1cST5/view?usp=sharing' class='btn-custom btn-color' >
+              DOWNLOAD RESUME
+            </a></b>
             
           </div>
         </div>
@@ -161,8 +161,8 @@
             <p><em> Narwal Inc, Ohio </em></p>
             <p>
             <ul>
-	      <li> For Proctor and Gamble, I automated Kerberos attack detection by integrating MLFlow in Databricks, reducing manual work by 5 hours per case, and developed ETL pipelines to process over 4.3 million Active Directory event logs from Azure Data Lake Storage. I utilized supervised and unsupervised learning techniques, achieving a 96% AUC-ROC score, and delivered insights through 12 interactive dashboards, reducing false positive rates by 22%.
-		   For Ingenovis Health, I implemented a machine learning model performance monitoring and retraining framework, improving prediction accuracy and reducing performance degradation by 15%, while optimizing the ML pipeline for a 30% increase in efficiency and scalability, successfully deploying and maintaining multiple models in production. </li>
+	      <li> Worked on the Kerberos attack detection by integrating MLFlow in Databricks, reducing manual work by 5 hours per case, and developed ETL pipelines to process over 4.3 million Active Directory event logs from Azure Data Lake Storage. I utilized supervised and unsupervised learning techniques, achieving a 96% AUC-ROC score, and delivered insights through 12 interactive dashboards, reducing false positive rates by 22%.
+		   Implemented a machine learning model performance monitoring and retraining framework, improving prediction accuracy and reducing performance degradation by 15%, while optimizing the ML pipeline for a 30% increase in efficiency and scalability, successfully deploying and maintaining multiple models in production. </li>
             </ul>
 	       <p><b> Technologies Used:</b>  Python, PySpark, SQL, Databricks, MLOps, AutoML, AWS Sagemaker, HuggingFace, matplotlib, pandas, scikit-learn </p>
             </p>
@@ -482,8 +482,7 @@
 	  }
 	}
 </style>
-  <!-- ======= Publication Section ======= -->
- <section id="research" class="research">
+<section id="research" class="research"> <!-----Research----->
   <div class="container">
     <div class="section-title">
       <h2>Publications</h2>
@@ -493,9 +492,9 @@
       <!-- Research Paper 1 -->
       <div class="research-item">
 	<div class="research-image">
-	 <a href="https://link.springer.com/chapter/10.1007/978-981-16-0878-0_40">
-	  <img src="assets/depression.png" class="img-fluid" alt="">
-	 </a>
+	  <a href="https://link.springer.com/chapter/10.1007/978-981-16-0878-0_40">
+	    <img src="assets/depression.png" class="img-fluid" alt="Depression Detection">
+	  </a>
 	</div>
 	<div class="research-description">
 	  <h4>DEPRESSION DETECTION USING TRANSFER LEARNING</h4>
@@ -506,8 +505,8 @@
       <!-- Research Paper 2 -->
       <div class="research-item">
 	<div class="research-image">
-          <a href="https://link.springer.com/chapter/10.1007/978-981-15-9019-1_1">
-	    <img src="assets/fraud.jpg" class="img-fluid" alt="">
+	  <a href="https://link.springer.com/chapter/10.1007/978-981-15-9019-1_1">
+	    <img src="assets/fraud.jpg" class="img-fluid" alt="Fraudulent Detection">
 	  </a>
 	</div>
 	<div class="research-description">
@@ -515,11 +514,32 @@
 	  <p>The paper "Fraudulent Detection in Healthcare Insurance" outlines a machine-learning approach to detect fraudulent healthcare claims using a publicly available Medicare dataset. The tasks include classifying providers as fraudulent or non-fraudulent, addressing class imbalance with Synthetic Minority Over-sampling Technique (SMOTE), and implementing a hybrid clustering and classification model. Additionally, several machine learning algorithms are tested to identify the most efficient approach for fraud detection.</p>
 	</div>
       </div>
-
     </div>
   </div>
-</section><!-- End Publication Section -->
-
+  </section>
+  <style>
+	.research-item {
+	  display: flex;
+	  align-items: flex-start; /* Aligns items at the top */
+	  gap: 20px; /* Adds space between image and text */
+	  margin-bottom: 30px; /* Space between items */
+	}
+	
+	.research-image img {
+	  max-width: 200px; /* Consistent image width */
+	  height: auto; /* Maintain aspect ratio */
+	  object-fit: contain; /* Prevent image distortion */
+	}
+	
+	.research-description {
+	  flex: 1; /* Ensures the description takes up remaining space */
+	}
+	
+	.research-content {
+	  display: flex;
+	  flex-direction: column; /* Aligns research items vertically */
+	}
+ </style>
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="container">
