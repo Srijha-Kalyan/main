@@ -8,13 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
+/* body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
   color: #fff;
   position: relative;
   background: transparent;
-}
+} */
 
 /* body::before {
   content: "";
@@ -27,6 +27,18 @@ body {
   height: 100vh;
   z-index: -1;
 } */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #000000;   /* plain black */
+  color: #fff;
+  position: relative;
+  background: #000000;         /* ensures no transparent fallback */
+}
+
+/* Remove animated star GIF completely */
+body::before {
+  content: none !important;
+}
 
 @media (min-width: 1024px) {
   body::before {
